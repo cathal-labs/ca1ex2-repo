@@ -1,0 +1,23 @@
+git config --global user.name cathal-labs
+git config --global user.email x00223404@mytudublin.ie
+git config --global core.autocrlf false
+git init
+git branch -m master main
+git add .
+git commit -m "first commit"
+git branch feature-local-test
+git chechout feature-local-test
+git checkout feature-local-test
+git add cloud.py
+git commit -m "first branch commit"
+git checkout main
+git add cloud.py
+git commit -m "second main commit"
+git merge feature-local-test
+git add .
+git commit -m "merge commit"
+git log --online --graph --all
+git log --oneline --graph --all
+git remote add origin https://github.com/cathal-labs/ca1ex2-repo.git
+git push -u origin main
+git pull
